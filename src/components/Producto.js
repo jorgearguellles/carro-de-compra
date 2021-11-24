@@ -1,4 +1,5 @@
 import { Component } from 'react'
+import { Button } from './Button';
 
 const styles = {
   producto: {
@@ -17,13 +18,16 @@ const styles = {
 class Producto extends Component{
   render(){
     // console.log(this.props) // Para verificar que si estamos recibiendo las porpiedades desde el componente padre
-    const { producto } = this.props; // Lo destructuramos para poderlo usar de manra más legible para humanos
+    const { producto, agregarAlCarro } = this.props; // Lo destructuramos para poderlo usar de manra más legible para humanos
 
     return (
       <div style={ styles.producto }>
         <img style={ styles.img } alt={ producto.name } src={ producto.img } />
         <h3>{ producto.name }</h3>
         <p>{ producto.price }</p>
+        <Button onClick={ () => agregarAlCarro(producto) }>
+          Agregar al carro
+        </Button>
       </div>
     )
   }

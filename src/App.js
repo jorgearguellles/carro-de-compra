@@ -2,6 +2,7 @@ import { Component } from 'react';
 import {Productos} from './components/Productos';
 import { Layout } from './components/Layout';
 import { Title } from './components/Title';
+import { Navbar } from './components/Navbar';
 
 class App extends Component {
   state = {
@@ -14,13 +15,16 @@ class App extends Component {
 
   render(){
     return (
-      <Layout>
-        <Title />
-        <Productos 
-          agregarAlCarro = { () => console.log("Producto agregado") }
-          productos = { this.state.productos }
-        />
-      </Layout>
+      <div>
+        <Navbar />
+        <Layout>
+          <Title />
+          <Productos 
+            agregarAlCarro = { () => console.log("Producto agregado") }
+            productos = { this.state.productos }
+            />
+        </Layout>
+      </div>
     )
   }
 }

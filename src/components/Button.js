@@ -3,7 +3,7 @@ import { Component } from 'react'
 const styles = {
   btn: {
     border:'none',
-    backgroundColor: 'green',
+    backgroundColor: '#211953',
     color:'white',
     padding: '15px 20px',
     borderRadius: '6px',

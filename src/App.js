@@ -14,6 +14,7 @@ class App extends Component {
     carro: [
       // { name: "Tomate", price: 1500, img: '/productos/tomate.jpg', cantidad: 1 } -> Estructura de datos del estado del carrito de compra
     ],
+    esCarroVisible: false,
   }
 
   agregarAlCarro = (producto) => { //Usamos fatArrowFunction para evitar el problema del camnio del this
@@ -38,12 +39,24 @@ class App extends Component {
     })
   };
 
+  mostrarCarro = () => {
+    if(!this.state.carro.length){ // Para mostrar el producto en carrito sol cuando se halla añadido alguno, no cuando este vacio y se deje acivado
+      return 
+    }
+    this.setState({ esCarroVisible: !this.state.esCarroVisible })
+  };
+
   render(){
     // console.log(this.state.carro);
+    const { esCarroVisible } = this.state;
 
     return (
       <div>
-        <Navbar carro={ this.state.carro }/>
+        <Navbar 
+          carro={ this.state.carro }
+          esCarroVisible={esCarroVisible}
+          mostrarCarro={this.mostrarCarro}
+        />
         <Layout>
           <Title />
           <Productos 

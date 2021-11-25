@@ -19,11 +19,11 @@ class BubbleAlert extends Component{
   };
 
   render() {
-    console.log(this.props)
+    // console.log(this.props)
     const { value } = this.props;
 
     return (
-      <span style={ styles.bubbleAlert}>
+      <span style={ styles.bubbleAlert }>
         {
           this.getNumber(value)
         }

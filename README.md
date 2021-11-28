@@ -24,8 +24,8 @@ Made with :green_heart: y:
 
 ## Screenshot App
 
-![App Screenshot](https://github.com/jorgearguellles/carro-de-compras/blob/main/src/images/1.png)
-![App Screenshot](https://github.com/jorgearguellles/carro-de-compras/blob/main/src/images/2.png)
+![App Screenshot](https://github.com/jorgearguellles/carro-de-compra/blob/main/src/images/1.png)
+![App Screenshot](https://github.com/jorgearguellles/carro-de-compra/blob/main/src/images/2.png)
 
 ## Feedback
 

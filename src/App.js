@@ -7,9 +7,9 @@ import { Navbar } from './components/Navbar';
 class App extends Component {
   state = {
     productos: [
-      { name: "Tomate", price: 1500, img: '/productos/tomate.jpg' },
-      { name: "Arbejas", price: 2500, img: '/productos/arbejas.jpg' },
-      { name: "Lechuga", price: 500, img: '/productos/lechuga.jpg' },
+      { name: "Tomate", price: 1500, img: './images/tomate.jpg' },
+      { name: "Arbejas", price: 2500, img: '/images/arbejas.jpg' },
+      { name: "Lechuga", price: 500, img: '/images/lechuga.jpg' },
     ],
     carro: [
       // { name: "Tomate", price: 1500, img: '/productos/tomate.jpg', cantidad: 1 } -> Estructura de datos del estado del carrito de compra
